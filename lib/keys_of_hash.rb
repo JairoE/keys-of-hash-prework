@@ -3,8 +3,8 @@ class Hash
     # code goes here
     array = []
 
-    Hash.keys.each do |key|
-      if arguments.include?(key)
+    Hash.each do |key, value|
+      if arguments.include?(value)
         array << key
       end
     end
